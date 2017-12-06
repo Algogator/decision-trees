@@ -94,8 +94,7 @@ for i in range(len(res_test)):
 # class was one of the classes that tied for best, the accuracy is 1
 # divided by the number of classes that tied for best.
 
-    # print "ID="+str(i)+", predicted="+str(predicted_class)+",
-    # true="+str(res[i][-1])+", accuracy="+str(accuracy)
+    print "ID="+str(i)+", predicted="+str(pred_classes)+", true="+str(res[i][-1])+", accuracy="+str(accuracy)
 
 # overall classification accuracy, which is defined as the average of the
 # classification accuracies you printed out for each test object
