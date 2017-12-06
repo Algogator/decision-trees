@@ -1,12 +1,16 @@
+import sys
+
+inf = sys.maxint
+
 def preprocess(training_file):
     f = open(training_file,'r')
     message = f.read()
     f.close()
     m = message.split('\n')
     res = []
-    classnum = 0
-    classnuml = 1
-    for i in m:
+    classnum = -inf
+    classnuml = inf
+    for i in m[:5]:
         y = i.split()
         if y:
             res.append([])

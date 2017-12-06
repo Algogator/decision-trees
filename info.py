@@ -3,7 +3,7 @@ import math
 def entropy(l):
     if l:
         c_high = len(l[0]) - 1
-        print c_high, "c_high"
+        # print c_high, "c_high"
         sum1 = len(l)
         s1 = 0
         attrlist1 = [0] * c_high

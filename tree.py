@@ -1,8 +1,8 @@
 class Node(object):
-    def __init__(self, gain, best_attribute=-1, best_threshold=-1, classtype=None):
+    def __init__(self, gain, best_attribute=-1, best_threshold=-1, dist=None):
         self.best_attribute = best_attribute
         self.best_threshold = best_threshold
-        self.classtype = classtype
+        self.dist = dist
         self.gain = gain
         self.left_child = None
         self.right_child = None
@@ -35,7 +35,7 @@ class BinaryTree(object):
             while q:
                 elem = q.pop(0)
                 node_id += 1
-                print "tree="+str(tree)+", node="+str(node_id)+", feature="+str(elem.best_attribute)+", thr="+str(elem.best_threshold)+", gain="+str(elem.gain)+", class="+str(elem.classtype)
+                print "tree="+str(tree)+", node="+str(node_id)+", feature="+str(elem.best_attribute)+", thr="+str(elem.best_threshold)+", gain="+str(elem.gain)
                 # (str(start.value) + "-")
                 if elem.left_child:
                     q.append(elem.left_child)
