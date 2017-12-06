@@ -10,7 +10,7 @@ def preprocess(training_file):
     res = []
     classnum = -inf
     classnuml = inf
-    for i in m[:5]:
+    for i in m:
         y = i.split()
         if y:
             res.append([])
